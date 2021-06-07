@@ -69,18 +69,18 @@ public class FirstController {
     return "1324";
   }
 
-//  // http://127.0.0.1:8080/first/echo/me_id?v2=zhouv2
-//  @GetMapping("/first/{v1}")
-//  public String firstApi(@PathVariable("v1") String v1, @RequestParam("v2") String v2) {
-//    return "zhouzhou"+v1+"="+v2;
-//  }
-//
-//  // http://127.0.0.1:8080/hello?name=zhou
-//  // http://127.0.0.1:8080/hello
-//  @GetMapping("/hello")
-//  public String hello(@RequestParam(value = "name", defaultValue = "World") String name) {
-//    return String.format("hello %s",name);
-//  }
+  // http://127.0.0.1:8080/first/echo/me_id?v2=zhouv2
+  @GetMapping("/first/{v1}")
+  public String firstApi(@PathVariable("v1") String v1, @RequestParam("v2") String v2) {
+    return "zhouzhou"+v1+"="+v2;
+  }
+
+  // http://127.0.0.1:8080/hello?name=zhou
+  // http://127.0.0.1:8080/hello
+  @GetMapping("/hello")
+  public String hello(@RequestParam(value = "name", defaultValue = "World") String name) {
+    return String.format("hello %s",name);
+  }
 
 
 
